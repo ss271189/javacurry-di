@@ -3,10 +3,10 @@ package jcspringframework.service;
 import org.springframework.stereotype.Service;
 
 @Service
-public class GreetingServiceImpl implements  GreetingService{
+public class SetterGreetingServiceImpl implements  GreetingService{
 
     @Override
     public String sayHello() {
-        return "Hello Mr Xyz";
+        return "Hello Mr Xyz -- Setter";
     }
 }
