@@ -1,9 +1,6 @@
 package jcspringframework;
 
-import jcspringframework.controller.ConstructorInjectionController;
-import jcspringframework.controller.MyController;
-import jcspringframework.controller.PropertyInjectionController;
-import jcspringframework.controller.SetterInjectionController;
+import jcspringframework.controller.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -30,6 +27,13 @@ public class JavaCurryDependencyInjectionApplication {
 		System.out.println("---------------Constructor---------------------");
 		ConstructorInjectionController constructorInjectionController=(ConstructorInjectionController) ctx.getBean("constructorInjectionController");
 		System.out.println(constructorInjectionController.sayHello());
+
+		// Bean gets injected in I18nController based on the spring.profiles.active value
+		System.out.println("---------------@Profiles Demo---------------------");
+		I18nController i18nController =(I18nController) ctx.getBean("i18nController");
+		System.out.println(i18nController.sayHello());
+
+
 	}
 
 
