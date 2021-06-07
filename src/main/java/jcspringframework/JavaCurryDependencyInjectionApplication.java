@@ -14,6 +14,8 @@ public class JavaCurryDependencyInjectionApplication {
 	public static void main(String[] args) {
 
 		ApplicationContext ctx=SpringApplication.run(JavaCurryDependencyInjectionApplication.class, args);
+
+		System.out.println("---------------Primary---------------------");
 		MyController obj= (MyController) ctx.getBean("myController");
 		System.out.println(obj.sayHello());
 
