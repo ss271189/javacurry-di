@@ -13,7 +13,9 @@ Below are the annotations used
 6) @Profiles - Bean gets injected based on the spring.profiles.active value in application.properties file.
                Default profile gets selected when no profile is set.
                @Profile take string array as parameter, hence we can pass multiple profile value even default.
-                          
+   
+
+Spring Bean life cycle demo has been added to class I18nController.java                           
 
 You can see, Property injection, Setter Injection and Constructor Injection used in this project.
 
